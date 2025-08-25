@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Bot - Features</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <header>
+    <nav>
+      <h1 class="logo">🌌 Nova Bot</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html" class="active">Features</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero center">
+    <h2>✨ Bot Features</h2>
+    <p>Click a category to reveal its commands.</p>
+  </section>
+
+  <section class="features-categories">
+    <div class="feature-card" onclick="toggleCategory('moderation')">
+      <h3>🔒 Moderation</h3>
+      <div class="feature-commands" id="moderation">
+        /ban, /kick, /mute, /unmute, /warn, /warnings, /delwarn, /lock, /unlock, /slowmode, /purge, /removenick, /removerole, /addrole
+      </div>
+    </div>
+
+    <div class="feature-card" onclick="toggleCategory('fun')">
+      <h3>🎲 Fun</h3>
+      <div class="feature-commands" id="fun">
+        /meme, /coinflip, /rps, /tod
+      </div>
+    </div>
+
+    <div class="feature-card" onclick="toggleCategory('utility')">
+      <h3>⚙️ Utilities</h3>
+      <div class="feature-commands" id="utility">
+        /ping, /help, /userinfo, /roleinfo, /server info, /uptime, /afk, /reminder add, /reminder remove, /reminder list, /setnick, /actionlog, /setcommandlog, /moderation, /unban
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/bg.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
