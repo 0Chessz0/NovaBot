@@ -25,9 +25,11 @@ window.onload = () => {
   let grid = document.getElementById("creditsGrid");
   if (grid) {
     let team = [
-      { name: "Your Name", role: "Creator", img: "assets/images/creator.png" },
-      { name: "ExampleMod", role: "Moderator", img: "assets/images/mod1.png" },
-      { name: "ExampleTester", role: "Tester", img: "assets/images/tester1.png" }
+      { name: "Chessz", role: "Creator", img: "assets/images/chessz.png" },
+      { name: "Connor", role: "Moderator", img: "assets/images/connor.png" },
+      { name: "Gov", role: "Moderator", img: "assets/images/gov.png" },
+      { name: "Hayden", role: "Tester", img: "assets/images/Hayden.png" },
+      { name: "Elena", role: "Tester", img: "assets/images/Elena.png" }
     ];
 
     team.forEach(member => {
